@@ -7,7 +7,7 @@ RUN useradd -m steam \
       && apt-get install wget -y \
       && dpkg --add-architecture i386 \
       && apt-get update \
-      && apt-get install lib32gcc1 -y
+      && apt-get install lib32gcc-s1 -y
 
 USER steam
 
