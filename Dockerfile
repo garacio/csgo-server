@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 RUN useradd -m steam \
       && apt-get update \ 
