@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM debian:bullseye
 
 RUN useradd -m steam \
