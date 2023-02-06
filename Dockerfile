@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM debian:bullseye
+FROM debian:buster
 
 RUN useradd -m steam \
       && export DEBIAN_FRONTEND=noninteractive \
@@ -7,7 +7,7 @@ RUN useradd -m steam \
       && apt-get install wget -y \
       && dpkg --add-architecture i386 \
       && apt-get update \
-      && apt-get install lib32gcc-s1 -y
+      && apt-get install lib32gcc1 -y
 
 USER steam
 
