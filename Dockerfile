@@ -2,6 +2,7 @@
 FROM debian:bullseye
 
 RUN useradd -m steam \
+      && export DEBIAN_FRONTEND=noninteractive \
       && apt-get update \ 
       && apt-get install wget -y \
       && dpkg --add-architecture i386 \
